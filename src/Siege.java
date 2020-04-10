@@ -45,7 +45,7 @@ class GamePanel extends JPanel implements KeyListener{
     private boolean[]keys;
     private Player player;
     private Siege mainFrame;
-    public static final int LEFT=1, UP=2, RIGHT=3, DOWN=4;
+    public static final int LEFT=0, UP=1, RIGHT=2, DOWN=3;
     ArrayList<Wall> walls;
 
     public GamePanel(Siege m){
@@ -58,7 +58,19 @@ class GamePanel extends JPanel implements KeyListener{
 
     private ArrayList<Wall> genWalls(){
         ArrayList<Wall>walls=new ArrayList<Wall>();
-        walls.add(new Wall(new Rectangle(367,187,10,180)));
+        walls.add(new Wall(new Rectangle(875,497,11,211)));
+        walls.add(new Wall(new Rectangle(875,423,11,32)));    // 455 ˅ door
+        walls.add(new Wall(new Rectangle(875,187,11,151)));  // 337 ˅ soft
+        walls.add(new Wall(new Rectangle(367,187,351,11))); // 718 > soft
+        walls.add(new Wall(new Rectangle(779,187,112,11)));
+        walls.add(new Wall(new Rectangle(367,187,11,180)));
+        walls.add(new Wall(new Rectangle(367,355,56,11)));
+        walls.add(new Wall(new Rectangle(411,355,11,206)));
+        walls.add(new Wall(new Rectangle(366,551,56,11)));
+        walls.add(new Wall(new Rectangle(366,551,11,60)));
+        walls.add(new Wall(new Rectangle(366,600,56,11)));
+        walls.add(new Wall(new Rectangle(411,600,11,109)));
+        walls.add(new Wall(new Rectangle(411,697,476,11)));
         return walls;
     }
 

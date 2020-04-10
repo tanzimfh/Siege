@@ -4,7 +4,7 @@ import java.awt.geom.Ellipse2D;
 public class Player{
     private int x,y,hp, maxhp, v;
     private Shape hitbox;
-    public static final int LEFT=1, UP=2, RIGHT=3, DOWN=4;
+    public static final int LEFT=0, UP=1, RIGHT=2, DOWN=3;
 
     public Player(int x, int y, int maxhp, int v){
         this.x=x;
