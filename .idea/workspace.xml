@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11eb20b1-69b1-4f04-8fca-4190fb0bba6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/Game4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/Game4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/Game4Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/Game4Panel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/GamePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/Siege.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/Siege.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Siege/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Siege/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Siege.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Siege.java" afterDir="false" />
-    </list>
+    <list default="true" id="11eb20b1-69b1-4f04-8fca-4190fb0bba6b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1586482001556</updated>
     </task>
+    <task id="LOCAL-00001" summary="uh what">
+      <created>1586491585797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586491585797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +93,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="uh what" />
+    <option name="LAST_COMMIT_MESSAGE" value="uh what" />
   </component>
   <component name="WindowStateProjectService">
     <state x="381" y="140" key="FileChooserDialogImpl" timestamp="1586483061069">
