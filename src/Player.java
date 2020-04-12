@@ -2,7 +2,8 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
 public class Player{
-    private int x,y,hp, maxhp, v;
+    private int x,y,hp, maxhp;
+    private int v;
     private Shape hitbox;
     public static final int LEFT=0, UP=1, RIGHT=2, DOWN=3;
 

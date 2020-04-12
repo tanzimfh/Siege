@@ -43,13 +43,14 @@ public class Siege extends JFrame implements ActionListener{
 class GamePanel extends JPanel implements KeyListener{
     private Image map = new ImageIcon("map.jpg").getImage();
     private boolean[]keys;
-    private Player player;
+    private Player player1, player2;
     private Siege mainFrame;
     public static final int LEFT=0, UP=1, RIGHT=2, DOWN=3;
     ArrayList<Wall> walls;
 
     public GamePanel(Siege m){
-        player=new Player(490,310,100,2);
+        player1=new Player(490,310,67,3);
+        player2= new Player(490, 380,150,2);
         walls=genWalls();
         keys = new boolean[KeyEvent.KEY_LAST+1];
         addKeyListener(this);
@@ -81,24 +82,24 @@ class GamePanel extends JPanel implements KeyListener{
     }
 
     public void move(){
-        if(keys[KeyEvent.VK_RIGHT]){
-            tryMove(RIGHT);
-        }
-        if(keys[KeyEvent.VK_LEFT]){
-            tryMove(LEFT);
-        }
-        if(keys[KeyEvent.VK_UP]){
-            tryMove(UP);
-        }
-        if(keys[KeyEvent.VK_DOWN]){
-            tryMove(DOWN);
-        }
+        if(keys[KeyEvent.VK_D]) tryMove (player1, RIGHT);
+        if(keys[KeyEvent.VK_A]) tryMove(player1, LEFT);
+        if(keys[KeyEvent.VK_W]) tryMove(player1, UP);
+        if(keys[KeyEvent.VK_S]) tryMove(player1, DOWN);
+
+        if(keys[KeyEvent.VK_RIGHT]) tryMove (player2, RIGHT);
+        if(keys[KeyEvent.VK_LEFT])  tryMove(player2, LEFT);
+        if(keys[KeyEvent.VK_UP]) tryMove(player2, UP);
+        if(keys[KeyEvent.VK_DOWN]) tryMove(player2, DOWN);
+
+        /*
         Point mouse = MouseInfo.getPointerInfo().getLocation();
         Point offset = getLocationOnScreen();
         System.out.println("("+(mouse.x-offset.x)+", "+(mouse.y-offset.y)+")");
+         */
     }
 
-    public void tryMove(int dir){
+    public void tryMove(Player player, int dir){
         player.walk(dir);
         for(Wall wall:walls){
             if(player.collide(wall.getHitbox())){
@@ -111,7 +112,9 @@ class GamePanel extends JPanel implements KeyListener{
     public void paintComponent(Graphics g){
         g.drawImage(map,0,0,null);
         g.setColor(Color.GREEN);
-        g.fillOval(player.getX()-5,player.getY()-5,10,10);
+        g.fillOval(player1.getX()-5,player1.getY()-5,10,10);
+        g.setColor(Color.blue);
+        g.fillOval(player2.getX()-5,player2.getY()-5,10,10);
     }
 
     public void keyTyped(KeyEvent e) {}
